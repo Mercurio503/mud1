@@ -1,0 +1,134 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.875);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    height: auto;
+    position: sticky;
+    top: 0px;
+}
+nav{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.menu-toggle{
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+.menu{
+    /* text-decoration: none; */
+    list-style-type: none;
+    margin: 10px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.menu li {
+    margin: 0 15px;
+    /* list-style-type: none;
+    border: 1px solid white; */
+}
+
+.menu li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+@media (max-width:480px){
+    .menu-toggle{
+        display: block;
+    }
+    nav{
+        height: auto;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        /* background-color: #333; */
+        width: 250px;
+        position: absolute;
+        top: 0;
+        left: -250px;
+        height:auto;
+        transition: left 0.3s ease;
+        z-index: 1000;
+        border: 1px solid red;
+        
+    }
+    .menu li {
+        margin: 20px 0;
+        
+    }
+    .menu li a {
+        display: block;
+        padding: px 20px;
+    }
+
+    li{
+        margin: 10px;
+        list-style-type: none;
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+        /* border-bottom: 1px solid rgb(255, 255, 255); */
+        /* padding: -10px; */
+    }
+    a:hover{
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+}
+
+main{
+    width: 100%;
+    height:auto ;
+   
+}
+.seccion-portada{
+    width: 100%;
+    height: auto;
+    display: grid;
+    /* flex-direction: column; */
+    margin-top: 20px;
+}
+.port{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.port-image{
+    width: 350px;
+    height: auto;
+}
+
+.vision{
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+}
+.parrafo{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20PX;
+}
